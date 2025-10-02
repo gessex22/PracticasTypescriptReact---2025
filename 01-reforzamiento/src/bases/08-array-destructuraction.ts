@@ -16,10 +16,10 @@
 
 
 
-export const useState = (name: string)=>{
+export const useState = (name: string) => {
 
 
-    return[name, (name:string)=>{ console.log(name) }] as const
+    return [name, (name: string) => { console.log(name) }] as const
 
 
 
@@ -27,4 +27,4 @@ export const useState = (name: string)=>{
 const [name, setName] = useState("Daniels")
 
 console.log(name)
-setName("anderson")
+setName('Eliot')
