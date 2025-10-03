@@ -7,6 +7,7 @@ import './style.css'
 //import  "./bases/06-functions"
 
   import {getHeroesByOwner}  from "./bases/tarea1"
+  import "./bases/10-promises"
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
