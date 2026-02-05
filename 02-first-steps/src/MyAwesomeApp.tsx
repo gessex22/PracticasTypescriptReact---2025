@@ -17,13 +17,19 @@ export function MyAwesomeApp() {
   };
 
   return (
-    <>
-      <h1>{firstName}</h1>
+    <div data-testid="div-app">
+      <h1 data-testid='firstNameTitle'> {firstName}</h1>
       <h3>{lastName}</h3>
-      <p>{favoriteGames.join(", ")}</p>
+      <p className="mi-clase-favorita">{favoriteGames.join(", ")}</p>
       <p> {2 + 2}</p>
       {isActive ? "active" : "inactive"}
       <p style={MyStyles}>{JSON.stringify(address)}</p>
-    </>
+    </div>
   );
+
+  
 }
+
+
+
+
